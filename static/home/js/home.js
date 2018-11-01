@@ -1,6 +1,6 @@
 $(function () {
     // 隐藏滚动条后，导致页面过大的一个处理
-    $('.home').width(innerWidth)
+    $('.home').width(innerWidth);
 
     new Swiper('#topSwiper', {
         pagination: '.swiper-pagination',
@@ -20,4 +20,4 @@ $(function () {
         spaceBetween: 10,
          loop: true
     });
-})
+});
