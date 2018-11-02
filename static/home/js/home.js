@@ -13,10 +13,10 @@ $(function () {
         loop: true
     });
 
+    var swiper = new Swiper('#mustbuySwiper', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      freeMode: true,
 
-     new Swiper('#mustbuySwiper', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-         loop: true
     });
 });
