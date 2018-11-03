@@ -30,7 +30,7 @@ def home(request):  # 首页
     return render(request, 'home/home.html', context=data)
 
 
-def market(request,childid):  # 闪购超市
+def market(request, childid, sortid):  # 闪购超市
     foodtypes = Foodtypes.objects.all()
     typeIndex = int(request.COOKIES.get('typeIndex', 0))
     # 根据分类下标 获取 对应 分类ID
@@ -51,12 +51,20 @@ def market(request,childid):  # 闪购超市
         goodsList = Goods.objects.filter(categoryid=categoryid)
     else:  # 分类 下 子类
         goodsList = Goods.objects.filter(categoryid=categoryid, childcid=childid)
+        # 排序
+    if sortid == '1':  # 销量排序
+        goodsList = goodsList.order_by('-productnum')
+    elif sortid == '2':  # 价格最低
+        goodsList = goodsList.order_by('price')
+    elif sortid == '3':  # 价格最高
+        goodsList = goodsList.order_by(('-price'))
     data = {
         'foodtypes': foodtypes,
         'goodsList': goodsList,
         'childTypleList': childTypleList,
+        'childid': childid,
     }
-    return render(request, 'market/market.html',context=data)
+    return render(request, 'market/market.html', context=data)
 
 
 def cart(request):  # 购物车

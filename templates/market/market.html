@@ -19,7 +19,7 @@
                 {% for foodtype in foodtypes %}
                     <li class="type-item">
                         <span></span>
-                        <a href="{% url 'axf:market' 0 %}">
+                        <a href="{% url 'axf:market' 0 0 %}">
                             {{ foodtype.typename }}
                         </a>
                     </li>
@@ -83,17 +83,17 @@
         <div class="bounce-view category-view">
             <div class="bounce-wrapper">
                 {% for child in childTypleList %}
-                    <a href="{% url 'axf:market' child.childid %}">{{ child.childname }}</a>  {#  传过来的数据是以字典的形式 获取字典里某键的值 '格式为 {{ 字典.键 }} '  #}
+                    <a href="{% url 'axf:market' child.childid 0 %}">{{ child.childname }}</a>  {#  传过来的数据是以字典的形式 获取字典里某键的值 '格式为 {{ 字典.键 }} '  #}
                 {% endfor %}
             </div>
         </div>
 {#            排序#}
         <div class="bounce-view sort-view">
             <div class="bounce-wrapper">
-                <a href="">综合排序</a>
-                <a href="">销量排序</a>
-                <a href="">价格最低</a>
-                <a href="">价格最高</a>
+                <a href="{% url 'axf:market' childid 0 %}">综合排序</a>
+                <a href="{% url 'axf:market' childid 1 %}">销量排序</a>
+                <a href="{% url 'axf:market' childid 2 %}">价格最低</a>
+                <a href="{% url 'axf:market' childid 3 %}">价格最高</a>
             </div>
         </div>
         </div>
