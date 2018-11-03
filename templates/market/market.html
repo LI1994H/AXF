@@ -19,7 +19,7 @@
                 {% for foodtype in foodtypes %}
                     <li class="type-item">
                         <span></span>
-                        <a href="{% url 'axf:market' foodtype.typeid  %}">
+                        <a href="{% url 'axf:market'%}">
                             {{ foodtype.typename }}
                         </a>
                     </li>

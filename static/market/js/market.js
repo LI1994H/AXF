@@ -10,7 +10,7 @@ $(function(){
     }
     // 每次点击记录点击分类的位置
     $('.type-item').click(function () {
-       $.cookie('typeIndex', $(this).index(), {expires:3, path:'/'})
+       $.cookie('typeIndex', $(this).index(), {expires:1, path:'/'})
     })
 
 });

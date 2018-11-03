@@ -30,8 +30,11 @@ def home(request):  # 首页
     return render(request, 'home/home.html', context=data)
 
 
-def market(request,categoryid):  # 闪购超市
+def market(request):  # 闪购超市
     foodtypes = Foodtypes.objects.all()
+    typeIndex = int(request.COOKIES.get('typeIndex', 0))
+    # 根据分类下标 获取 对应 分类ID
+    categoryid = foodtypes[typeIndex].typeid
     goodsList = Goods.objects.filter(categoryid=categoryid)
     data = {
         'foodtypes': foodtypes,
