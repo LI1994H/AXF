@@ -30,15 +30,31 @@ def home(request):  # 首页
     return render(request, 'home/home.html', context=data)
 
 
-def market(request):  # 闪购超市
+def market(request,childid):  # 闪购超市
     foodtypes = Foodtypes.objects.all()
     typeIndex = int(request.COOKIES.get('typeIndex', 0))
     # 根据分类下标 获取 对应 分类ID
     categoryid = foodtypes[typeIndex].typeid
-    goodsList = Goods.objects.filter(categoryid=categoryid)
+    # 子类信息
+    childtypenames = foodtypes.get(typeid=categoryid).childtypenames
+    # 将每个子类拆分出来
+    childTypleList = []
+    for item in childtypenames.split('#'):
+        arr = item.split(':')
+        dir1 = {
+            'childname': arr[0],  # 子类名称
+            'childid': arr[1]  # 子类ID
+        }
+        childTypleList.append(dir1)
+
+    if childid == '0':  # 全部分类
+        goodsList = Goods.objects.filter(categoryid=categoryid)
+    else:  # 分类 下 子类
+        goodsList = Goods.objects.filter(categoryid=categoryid, childcid=childid)
     data = {
         'foodtypes': foodtypes,
-        'goodsList': goodsList
+        'goodsList': goodsList,
+        'childTypleList': childTypleList,
     }
     return render(request, 'market/market.html',context=data)
 
