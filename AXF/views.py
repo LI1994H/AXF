@@ -1,9 +1,21 @@
+import hashlib
+import os
 import uuid
 
-from django.shortcuts import render
+from django.http import JsonResponse
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from AXF.models import Wheel, Nav, Mustbuy, Shop, MainShow, Foodtypes, Goods, User
+
+# 加密
+from projectAXF import settings
+
+
+def genarate_password(param):
+    sha = hashlib.sha256()
+    sha.update(param.encode('utf-8'))
+    return sha.hexdigest()
 
 
 def home(request):  # 首页
@@ -74,7 +86,22 @@ def cart(request):  # 购物车
 
 
 def mine(request):  # 我的
-    return render(request,'mine/mine.html')
+    token = request.session.get('token')
+    responseData = {}
+    if token:  # 登录
+        user = User.objects.get(token=token)
+        responseData = {
+            'name': user.name,
+            'rank': user.rank,
+            'img': '/static/uploads/' + user.img,
+            'isLogin': 1
+        }
+    else:  # 未登录
+        responseData = {
+            'name': '未登录',
+            'img': '/static/uploads/axf.png'
+        }
+    return render(request, 'mine/mine.html', context=responseData)
 
 
 def registe(request):
@@ -83,11 +110,59 @@ def registe(request):
     elif request.method == 'POST':
         user = User()
         user.account = request.POST.get('account')
-        user.password = request.POST.get('password')
+        user.password = genarate_password(request.POST.get('password'))
         user.name = request.POST.get('name')
         user.phone = request.POST.get('phone')
         user.addr = request.POST.get('addr')
-        user.img = 'axf.png'
+        file = request.FILES.get('icon')
+        filename = user.account + file.name
+        user.img = filename
+        filepath = os.path.join(settings.MEDIA_ROOT, filename)
+        with open(filepath, 'wb') as fp:
+            for data in file.chunks():
+                fp.write(data)
         user.token = str(uuid.uuid5(uuid.uuid4(), 'register'))
         user.save()
-    return render(request, 'mine/mine.html')
+        request.session['token'] = user.token
+    return redirect('axf:mine')
+
+
+def checkaccount(request):
+    account = request.GET.get('account')
+    responseData = {
+        'msg': '账号可用',
+        'status': 1  # 1标识可用，-1标识不可用
+    }
+    try:
+        user = User.objects.get(account=account)
+        responseData['msg'] = '账号已被占用'
+        responseData['status'] = -1
+        return JsonResponse(responseData)
+
+    except:
+        return JsonResponse(responseData)
+
+def checkphone(request):
+    phone = request.GET.get('phone')
+    print(phone,111)
+    responseData = {
+        'msg': '手机号可用',
+        'status': 1  # 1标识可用，-1标识不可用
+    }
+    try:
+        user = User.objects.get(phone=phone)
+        responseData['msg'] = '该手机已注册'
+        responseData['status'] = -1
+        return JsonResponse(responseData)
+    except:
+        return JsonResponse(responseData)
+
+
+def logout(request):
+    return None
+
+
+def login(request):
+    return None
+
+
