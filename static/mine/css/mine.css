@@ -25,6 +25,7 @@ footer .mine dd {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    margin-right: 0.7rem;
 }
 .mine .user-wrapper .user-content{
     width: 75%;
@@ -32,6 +33,8 @@ footer .mine dd {
 }
 .mine .user-wrapper .user-content p{
     line-height: 2rem;
+    font-size: 0.8rem;
+
 }
 .mine .user-wrapper .user-content span{
     padding-right: 0.4rem;
@@ -43,6 +46,7 @@ footer .mine dd {
     font-size: 2rem;
     font-weight: 700;
     color: white;
+    margin-bottom: 0.6rem;
 }
 
 
@@ -50,6 +54,7 @@ footer .mine dd {
     line-height: 2rem;
     background: #f0e000;
     text-align: center;
+    font-size: 0.8rem;
 }
 .mine .collect span,
 .mine .collect .glyphicon{
