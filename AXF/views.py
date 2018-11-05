@@ -87,8 +87,7 @@ def registe(request):
         user.name = request.POST.get('name')
         user.phone = request.POST.get('phone')
         user.addr = request.POST.get('addr')
-        if request.POST.get('icon'):
-            user.img = request.POST.get('icon')
+        user.img = 'axf.png'
         user.token = str(uuid.uuid5(uuid.uuid4(), 'register'))
         user.save()
     return render(request, 'mine/mine.html')

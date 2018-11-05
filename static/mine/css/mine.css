@@ -89,6 +89,7 @@ footer .mine dd {
 }
 .mine .other section ul li dl{
     text-align: center;
+    margin: 0;
 }
 .mine .other section ul li dl dt{
     width:100%;
