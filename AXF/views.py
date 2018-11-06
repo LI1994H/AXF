@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from AXF.models import Wheel, Nav, Mustbuy, Shop, MainShow, Foodtypes, Goods, User
+from AXF.models import Wheel, Nav, Mustbuy, Shop, MainShow, Foodtypes, Goods, User, Cart
 
 # 加密
 from projectAXF import settings
@@ -182,3 +182,35 @@ def login(request):
             return render(request, 'mine/login.html', context={'acountErr':'账号不存在!'})
 
 
+def addcart(request):
+    goodsid = request.GET.get('goodsid')
+    token = request.session.get('token')
+    responseData = {
+        'msg': '添加到购车',
+        'status':1, # 1标识添加成功,0标识添加失败,-1标识未登录
+    }
+    if token:  # 已登录直接操作模型
+        # 获取用户
+        user = User.objects.get(token=token)
+        # 获取商品
+        goods = Goods.objects.get(pk=goodsid)
+        # 商品已经存在购物车,只修改商品数量
+        # 商品不在购物车,新建对象(加入一条新的数据
+        carts = Cart.objects.filter(user=user,goods=goods)
+        if carts.exists():
+            cart = carts.first()
+            cart.number = cart.number + 1
+            cart.save()
+            responseData['number'] = cart.number
+        else:
+            cart = Cart()
+            cart.goods = goods
+            cart.user = user
+            cart.number = 1
+            cart.save()
+            responseData['number'] = cart.number
+        return JsonResponse(responseData)
+    else:
+        responseData['msg'] = '未登录,请登录后操作'
+        responseData['status'] = -1
+        return JsonResponse(responseData)

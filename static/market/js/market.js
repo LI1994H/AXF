@@ -60,4 +60,22 @@ $(function () {
         $('.bounce-view.sort-view').hide();
         $('#sortBt i').removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top')
     }
+
+    // 购物车操作
+    $('.bt-wrapper .glyphicon-minus').hide();
+    $('.bt-wrapper .num').hide();
+
+    //加操作
+    $('.bt-wrapper .glyphicon-plus').click(function () {
+        var goodsid = $(this).attr('goodsid');
+        var $that = $(this);
+        $.get('/addcart/',{'goodsid':goodsid}, function (response) {
+            if (response.status === -1){ // 未登录
+                window.open('/login/', target="_self")
+            } else if (response.status ===1){   // 添加成功
+                $that.prev().show().html(response.number);
+                $that.prev().prev().show()
+            }
+        })
+    })
 });
