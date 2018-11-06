@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23b0c4f-2b9e-4c09-90ca-6822c240a6ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c80b3d2a-c9ca-46d7-a8bf-70266d3b682e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c80b3d2a-c9ca-46d7-a8bf-70266d3b682e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/cart/js/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AXF/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/AXF/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AXF/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/AXF/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AXF/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AXF/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/market/js/market.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/market/js/market.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/market/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/market/market.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/cart.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +69,8 @@
         <counts>
           <entry key="css" value="82" />
           <entry key="html" value="1165" />
-          <entry key="js" value="626" />
-          <entry key="py" value="2331" />
+          <entry key="js" value="1042" />
+          <entry key="py" value="3042" />
           <entry key="sql" value="1" />
           <entry key="txt" value="5" />
         </counts>
@@ -80,16 +79,16 @@
         <counts>
           <entry key="CSS" value="82" />
           <entry key="HTML" value="1165" />
-          <entry key="JavaScript" value="626" />
+          <entry key="JavaScript" value="1042" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="2331" />
+          <entry key="Python" value="3042" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="AXF_mainshow" value="1" />
-          <entry key="axf_cart" value="1" />
+          <entry key="axf_cart" value="3" />
           <entry key="axf_foodtypes" value="5" />
           <entry key="axf_goods" value="3" />
           <entry key="axf_mainshow" value="2" />
@@ -99,21 +98,21 @@
           <entry key="axf_wheel" value="3" />
           <entry key="css" value="20" />
           <entry key="django_session" value="1" />
-          <entry key="html" value="30" />
-          <entry key="js" value="15" />
+          <entry key="html" value="31" />
+          <entry key="js" value="16" />
           <entry key="png" value="1" />
-          <entry key="py" value="39" />
+          <entry key="py" value="40" />
           <entry key="sql" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="20" />
-          <entry key="Database Element" value="20" />
-          <entry key="HTML" value="30" />
+          <entry key="Database Element" value="22" />
+          <entry key="HTML" value="31" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="15" />
-          <entry key="Python" value="39" />
+          <entry key="JavaScript" value="16" />
+          <entry key="Python" value="40" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="15" />
         </counts>
@@ -125,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AXF/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="224">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -134,30 +133,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AXF/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="213" column="42" lean-forward="true" selection-start-line="213" selection-start-column="42" selection-end-line="213" selection-end-column="42" />
+            <state relative-caret-position="263">
+              <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1541493687536" expanded="true" signature="2371:2844" ph="..." />
+                <marker date="1541502930419" expanded="true" signature="2831:3304" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/market/market.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/cart/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+            <state relative-caret-position="535">
+              <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/market/js/market.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/cart/js/cart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="76" column="42" lean-forward="true" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+            <state relative-caret-position="32">
+              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -188,7 +187,6 @@
         <option value="$PROJECT_DIR$/projectAXF/__init__.py" />
         <option value="$PROJECT_DIR$/static/base/js/base.js" />
         <option value="$PROJECT_DIR$/projectAXF/urls.py" />
-        <option value="$PROJECT_DIR$/templates/cart/cart.html" />
         <option value="$PROJECT_DIR$/../../Python1809AXF/templates/base/base.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c80b3d2a-c9ca-46d7-a8bf-70266d3b682e/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c80b3d2a-c9ca-46d7-a8bf-70266d3b682e/console_2.sql" />
@@ -218,8 +216,10 @@
         <option value="$PROJECT_DIR$/AXF/models.py" />
         <option value="$PROJECT_DIR$/templates/market/market.html" />
         <option value="$PROJECT_DIR$/AXF/urls.py" />
-        <option value="$PROJECT_DIR$/AXF/views.py" />
         <option value="$PROJECT_DIR$/static/market/js/market.js" />
+        <option value="$PROJECT_DIR$/AXF/views.py" />
+        <option value="$PROJECT_DIR$/templates/cart/cart.html" />
+        <option value="$PROJECT_DIR$/static/cart/js/cart.js" />
       </list>
     </option>
   </component>
@@ -230,8 +230,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="645" />
-    <option name="y" value="13" />
+    <option name="x" value="581" />
+    <option name="y" value="8" />
     <option name="width" value="783" />
     <option name="height" value="705" />
   </component>
@@ -282,6 +282,12 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectAXF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectAXF" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectAXF" type="b2602c69:ProjectViewProjectNode" />
@@ -344,6 +350,12 @@
               <item name="projectAXF" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectAXF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectAXF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectAXF" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -374,7 +386,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -470,10 +482,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="645" y="13" width="783" height="705" extended-state="0" />
+    <frame x="581" y="8" width="783" height="705" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20217097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20217097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -487,7 +499,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49878347" visible="true" weight="0.28496504" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49878347" visible="true" weight="0.28496504" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50121653" side_tool="true" weight="0.3174905" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -504,15 +516,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Python1809AXF/axf/urls.py" />
     <entry file="file://$PROJECT_DIR$/../../Python1809AXF/axf/views.py" />
-    <entry file="file://$PROJECT_DIR$/templates/cart/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Python1809AXF/templates/home/home.html" />
     <entry file="file://$PROJECT_DIR$/static/base/img/market.png">
       <provider selected="true" editor-type-id="images" />
@@ -746,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://c80b3d2a-c9ca-46d7-a8bf-70266d3b682e/schema/AXFdb/table/axf_cart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://c80b3d2a-c9ca-46d7-a8bf-70266d3b682e/schema/AXFdb/table/axf_cart.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -760,16 +757,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/market/market.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AXF/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="97">
           <caret line="113" column="25" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
           <folding>
             <marker date="1541481301813" expanded="true" signature="83:88" ph="..." />
@@ -781,28 +771,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AXF/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+    <entry file="das://c80b3d2a-c9ca-46d7-a8bf-70266d3b682e/schema/AXFdb/table/axf_cart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AXF/views.py">
+    <entry file="file://$PROJECT_DIR$/AXF/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="213" column="42" lean-forward="true" selection-start-line="213" selection-start-column="42" selection-end-line="213" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1541493687536" expanded="true" signature="2371:2844" ph="..." />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/market/js/market.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="76" column="42" lean-forward="true" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+        <state relative-caret-position="281">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/market/market.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AXF/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1541502930419" expanded="true" signature="2831:3304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/cart/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cart/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
         </state>
       </provider>
     </entry>

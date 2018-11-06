@@ -72,18 +72,30 @@ def market(request, childid, sortid):  # 闪购超市
         goodsList = goodsList.order_by('price')
     elif sortid == '3':  # 价格最高
         goodsList = goodsList.order_by(('-price'))
+    # 购物车数据
+    token = request.session.get('token')
+    carts = []
+    if token:
+        user = User.objects.get(token=token)
+        carts = Cart.objects.filter(user=user)
     data = {
         'foodtypes': foodtypes,
         'goodsList': goodsList,
         'childTypleList': childTypleList,
         'childid': childid,
+        'carts': carts
     }
     return render(request, 'market/market.html', context=data)
 
 
 def cart(request):  # 购物车
-    return render(request, 'cart/cart.html')
-
+    token = request.session.get('token')
+    if token: #有用户显示购物车信息
+        user = User.objects.get(token=token)
+        carts = Cart.objects.filter(user=user).exclude(number=0)
+        return render(request,'cart/cart.html',context={'carts': carts})
+    else:
+        return render(request, 'cart/cart.html')
 
 def mine(request):  # 我的
     token = request.session.get('token')
@@ -214,3 +226,22 @@ def addcart(request):
         responseData['msg'] = '未登录,请登录后操作'
         responseData['status'] = -1
         return JsonResponse(responseData)
+
+
+def subcart(request):
+    # 获取数据
+    token = request.session.get('token')
+    goodsid = request.GET.get('goodsid')
+    # 过滤数据 获取对应用户的数据
+    user = User.objects.get(token=token)
+    goods = Goods.objects.get(pk=goodsid)
+    # 删操作
+    cart = Cart.objects.filter(user=user).filter(goods=goods).first()
+    cart.number = cart.number - 1
+    cart.save()
+    responseData = {
+        'msg': '购物车减操作成功',
+        'status': 1,
+        'number': cart.number
+    }
+    return JsonResponse(responseData)

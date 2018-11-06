@@ -65,7 +65,16 @@ $(function () {
     $('.bt-wrapper .glyphicon-minus').hide();
     $('.bt-wrapper .num').hide();
 
-    //加操作
+    //每次加载要把之前有数据的显示
+    $('.bt-wrapper .num').each(function () {
+       var num = parseInt($(this).html());
+       if(num){
+           $(this).show();
+           $(this).prev().show()
+       }
+    });
+
+    //闪购超市加购物车操作
     $('.bt-wrapper .glyphicon-plus').click(function () {
         var goodsid = $(this).attr('goodsid');
         var $that = $(this);
@@ -77,5 +86,23 @@ $(function () {
                 $that.prev().prev().show()
             }
         })
+    });
+
+    //闪购超市减购物车操作
+    $('.bt-wrapper .glyphicon-minus').click(function () {
+        var goodsid = $(this).attr('goodsid');
+        var $that = $(this);
+        $.get('/subcart/',{'goodsid':goodsid},function (response) {
+            if (response.status===1){ //操作成功
+                var number = response.number;
+                if (number){
+                    $that.next().html(number)
+                }else{
+                    $that.next().hide();
+                    $that.hide();
+                }
+            }
+        })
     })
+
 });
