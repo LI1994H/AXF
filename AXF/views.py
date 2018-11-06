@@ -98,7 +98,6 @@ def mine(request):  # 我的
         }
     else:  # 未登录
         responseData = {
-            'name': '未登录',
             'img': '/static/uploads/axf.png'
         }
     return render(request, 'mine/mine.html', context=responseData)
@@ -159,7 +158,8 @@ def checkphone(request):
 
 
 def logout(request):
-    return None
+    request.session.flush()
+    return redirect('axf:mine')
 
 
 def login(request):
