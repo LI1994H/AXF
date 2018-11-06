@@ -163,6 +163,22 @@ def logout(request):
 
 
 def login(request):
-    return None
+    if request.method == 'GET':
+        return render(request, 'mine/login.html')
+    elif request.method == 'POST':
+        account = request.POST.get('account')
+        password = request.POST.get('password')
+        try:
+            user = User.objects.get(account=account)
+            if user.password == genarate_password(password):    # 登录成功
+                # 更新token
+                user.token = str(uuid.uuid5(uuid.uuid4(), 'login'))
+                user.save()
+                request.session['token'] = user.token
+                return redirect('axf:mine')
+            else:   # 登录失败
+                return render(request, 'mine/login.html', context={'passwdErr': '密码错误!'})
+        except:
+            return render(request, 'mine/login.html', context={'acountErr':'账号不存在!'})
 
 

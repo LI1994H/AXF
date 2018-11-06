@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23b0c4f-2b9e-4c09-90ca-6822c240a6ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/mine/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mine/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mine/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AXF/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AXF/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mine/mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mine/mine.html" afterDir="false" />
@@ -52,22 +55,22 @@
     <session id="784017695">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="82" />
-          <entry key="html" value="1068" />
-          <entry key="js" value="518" />
-          <entry key="py" value="1651" />
+          <entry key="html" value="1155" />
+          <entry key="js" value="542" />
+          <entry key="py" value="1667" />
           <entry key="sql" value="1" />
           <entry key="txt" value="5" />
         </counts>
@@ -75,10 +78,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="82" />
-          <entry key="HTML" value="1068" />
-          <entry key="JavaScript" value="518" />
+          <entry key="HTML" value="1155" />
+          <entry key="JavaScript" value="542" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="1651" />
+          <entry key="Python" value="1667" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -92,10 +95,10 @@
           <entry key="axf_nav" value="1" />
           <entry key="axf_user" value="2" />
           <entry key="axf_wheel" value="3" />
-          <entry key="css" value="19" />
+          <entry key="css" value="20" />
           <entry key="django_session" value="1" />
-          <entry key="html" value="28" />
-          <entry key="js" value="13" />
+          <entry key="html" value="29" />
+          <entry key="js" value="14" />
           <entry key="png" value="1" />
           <entry key="py" value="35" />
           <entry key="sql" value="15" />
@@ -103,11 +106,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="19" />
+          <entry key="CSS" value="20" />
           <entry key="Database Element" value="19" />
-          <entry key="HTML" value="28" />
+          <entry key="HTML" value="29" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="13" />
+          <entry key="JavaScript" value="14" />
           <entry key="Python" value="35" />
           <entry key="Scratch" value="15" />
         </counts>
@@ -120,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/AXF/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -131,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/mine/js/registerAxf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="90" column="35" lean-forward="true" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+            <state relative-caret-position="1800">
+              <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -140,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
+            <state relative-caret-position="121">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -149,12 +152,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AXF/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+            <state relative-caret-position="-1000">
+              <caret line="112" column="44" lean-forward="true" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1541430500520" expanded="true" signature="2365:2838" ph="..." />
+                <marker date="1541480410911" expanded="true" signature="2365:2838" ph="..." />
+                <marker date="1541480410911" expanded="true" signature="4597:5387" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mine/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/mine/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/mine/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -162,7 +193,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AXF/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="2060">
               <caret line="103" column="68" selection-start-line="103" selection-start-column="68" selection-end-line="103" selection-end-column="68" />
               <folding>
                 <marker date="1541393256523" expanded="true" signature="83:88" ph="..." />
@@ -182,8 +213,8 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -228,6 +259,9 @@
         <option value="$PROJECT_DIR$/templates/mine/registe.html" />
         <option value="$PROJECT_DIR$/AXF/urls.py" />
         <option value="$PROJECT_DIR$/static/mine/js/registerAxf.js" />
+        <option value="$PROJECT_DIR$/static/mine/css/login.css" />
+        <option value="$PROJECT_DIR$/templates/mine/login.html" />
+        <option value="$PROJECT_DIR$/static/mine/js/login.js" />
         <option value="$PROJECT_DIR$/templates/mine/mine.html" />
         <option value="$PROJECT_DIR$/AXF/views.py" />
       </list>
@@ -240,7 +274,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
+    <option name="x" value="110" />
     <option name="width" value="1221" />
     <option name="height" value="729" />
   </component>
@@ -472,10 +506,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="0" width="1221" height="729" extended-state="0" />
+    <frame x="110" y="0" width="1221" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20340426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -506,17 +540,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c80b3d2a-c9ca-46d7-a8bf-70266d3b682e/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectAXF/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python1809AXF/Python1809AXF/urls.py" />
     <entry file="file://$PROJECT_DIR$/static/base/js/swiper.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -692,20 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AXF/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="103" column="68" selection-start-line="103" selection-start-column="68" selection-end-line="103" selection-end-column="68" />
-          <folding>
-            <marker date="1541393256523" expanded="true" signature="83:88" ph="..." />
-            <marker date="1541393256523" expanded="true" signature="308:313" ph="..." />
-            <marker date="1541393256523" expanded="true" signature="385:390" ph="..." />
-            <marker date="1541393256523" expanded="true" signature="458:463" ph="..." />
-            <marker date="1541393256523" expanded="true" signature="2900:2909" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/lhy/本地磁盘/peixun/Djanjo/07-Django/07-Django/Django01/App/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -758,37 +767,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/mine/js/registerAxf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="90" column="35" lean-forward="true" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AXF/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/js/registerAxf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AXF/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2060">
+          <caret line="103" column="68" selection-start-line="103" selection-start-column="68" selection-end-line="103" selection-end-column="68" />
+          <folding>
+            <marker date="1541393256523" expanded="true" signature="83:88" ph="..." />
+            <marker date="1541393256523" expanded="true" signature="308:313" ph="..." />
+            <marker date="1541393256523" expanded="true" signature="385:390" ph="..." />
+            <marker date="1541393256523" expanded="true" signature="458:463" ph="..." />
+            <marker date="1541393256523" expanded="true" signature="2900:2909" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mine/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AXF/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+        <state relative-caret-position="-1000">
+          <caret line="112" column="44" lean-forward="true" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1541430500520" expanded="true" signature="2365:2838" ph="..." />
+            <marker date="1541480410911" expanded="true" signature="2365:2838" ph="..." />
+            <marker date="1541480410911" expanded="true" signature="4597:5387" ph="..." />
           </folding>
         </state>
       </provider>
